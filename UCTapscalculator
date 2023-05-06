@@ -48,13 +48,9 @@ public class UCTCalculatorAPS {
          subject6 = JOptionPane.showInputDialog("Enter subject 6 percentage : ");
          int f = Integer.parseInt(subject6);
          
-          String subject7;
-        subject7 = JOptionPane.showInputDialog("Enter subject 7: ");
-        String sub7 = subject7;
-         subject7 = JOptionPane.showInputDialog("Enter subject 7 percentage : ");
-         int g = Integer.parseInt(subject7);
          
-         int WPS =  a + b + c + d + e + f + g;
+         
+         int WPS =  a + b + c + d + e + f ;
          
          String message = "Your WPS is :" + WPS;
          
