@@ -1,0 +1,90 @@
+
+package javaapplication20;
+import java.util.*;
+/**
+ *
+ * @author Lukhanyo Mweli
+ */
+public class JavaApplication20 {
+  
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        String Subject1;
+        System.out.println("Enter First subject (Mathematics/Mathematical Literacy/Technical Methematics) : ");
+        Subject1 = scanner.next();
+        
+        int subject1;
+        System.out.println("Enter First subject results: ");
+        subject1 = scanner.nextInt();
+        
+        String Subject2;
+        System.out.println("Enter Second subject (EnglishHL/EnglishFAL) : ");
+        Subject2 = scanner.next();
+        
+        int subject2 ;
+        System.out.println("Enter Second subject results: ");
+        subject2 = scanner.nextInt();
+        
+        String Subject3;
+        System.out.println("Enter Third subject : ");
+        Subject3 = scanner.next();
+        
+        int subject3 ;
+        System.out.println("Enter Third subject results: ");
+         subject3= scanner.nextInt();
+         
+         String Subject4;
+        System.out.println("Enter Fourth subject : ");
+        Subject4 = scanner.next();
+
+        int subject4 ;
+        System.out.println("Enter Fourth subject results: ");
+        subject4 = scanner.nextInt();
+        
+        String Subject5;
+        System.out.println("Enter Fith subject : ");
+        Subject5 = scanner.next();
+
+        int subject5 ;
+        System.out.println("Enter Fith subject results: ");
+      subject5= scanner.nextInt();
+      
+      String Subject6;
+        System.out.println("Enter Sixth subject : ");
+        Subject6 = scanner.next();
+
+        int subject6 ;
+        System.out.println("Enter Sixth subject results: ");
+        subject6  = scanner.nextInt();
+        
+
+        int FPS =  subject1 + subject2 + subject3 + subject4 + subject5 + subject6 ;
+        
+       
+        System.out.println("Your APS score is: " + FPS);
+        System.out.println("   ");
+        System.out.println("Guranteed admission to :");
+        System.out.println("----------------------------------");
+        
+        if("Mathematics".equals(Subject1) && subject1 >= 60 && "EnglishFAL".equals(Subject2) && subject2 >= 60 || "EnglishHL".equals(Subject2) && subject2 >= 50 && FPS>=480  ){
+            System.out.println("Bachelor of Business Science and Bachelor of Commerce : Accounting "
+                    + "Economics"
+                    + "Information Systems"
+                    + "Management Studies"
+                    + "Organisational Psychology"
+                    + "Marketing Studies");
+        }else if ("Mathematics".equals(Subject1) && subject1 >= 70 && "EnglishFAL".equals(Subject2) && subject2 >= 60 || "EnglishHL".equals(Subject2) && subject2 >= 50 && FPS >=480 ){
+            System.out.println("Bachelor of Business Science and Bachelor of Commerce : Computer Science"
+                    + "Statical Science");
+            
+        }else if ("Mathematics".equals(Subject1) && subject1 >= 80 && "EnglishFAL".equals(Subject2) && subject2 >= 80 || "EnglishHL".equals(Subject2) && subject2 >= 60 && FPS >=500  ){
+            System.out.println("Bachelor of Business Science and Bachelor of Commerce : Acturial Science"
+                    + "Finance");
+ }
+        
+           
+        
+    }
+}
+    
